@@ -47,4 +47,8 @@ export const conversations: Record<string, Message[]> = {
     { from: BIRTHDAY_GIRL_USERNAME, text: "Chris..... i'm 30 😤" },
     { from: "krizda4", text: "Yo you're like old now. remember when we got hammered in owen basement and you wouldn't walk? we had to push you in a desk chair thru the hallway, it looked so sus… you screaming “WHEEEEEEEE!!” While we pushed you had me crying 😂" },
   ],
+  "Brittnanicus": [
+    { from: BIRTHDAY_GIRL_USERNAME, text: "omg i'm 30 😤" },
+    { from: "Brittnanicus", text: "yo how are we supposed to write this research thesis' with Dr. Weinstein as our professor?! FMLLL😭. Need Juwon's karaoke at Kings to save this day ASAP!" },
+  ],
 };
