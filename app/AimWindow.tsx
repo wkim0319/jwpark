@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BIRTHDAY_GIRL_USERNAME } from "./data/memories";
 import type { Message } from "./data/memories";
 
@@ -73,9 +73,24 @@ function BottomBarButton({
   );
 }
 
+const ROTATE_INTERVAL_MS = 8000;
+
 export default function AimWindow({ partyGoers, conversations }: AimWindowProps) {
   const [activeUser, setActiveUser] = useState(partyGoers[0] ?? null);
   const messages = activeUser ? conversations[activeUser] ?? [] : [];
+
+  // Rotate through conversations on a timer
+  useEffect(() => {
+    if (partyGoers.length <= 1) return;
+    const id = setInterval(() => {
+      setActiveUser((current) => {
+        const idx = partyGoers.indexOf(current);
+        const next = idx < 0 || idx >= partyGoers.length - 1 ? 0 : idx + 1;
+        return partyGoers[next];
+      });
+    }, ROTATE_INTERVAL_MS);
+    return () => clearInterval(id);
+  }, [partyGoers]);
 
   return (
     <div className="aim-pixelated w-full max-w-2xl overflow-hidden rounded-lg border-2 border-[#0054a6] bg-white shadow-2xl sm:rounded-lg">
