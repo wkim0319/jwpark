@@ -6,10 +6,10 @@ export default function Home() {
 
   return (
     <div
-      className="min-h-screen bg-[#008080]"
+      className="min-h-dvh bg-[#008080]"
       style={{ fontFamily: "Tahoma, Arial, sans-serif" }}
     >
-      <div className="mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center p-4">
+      <div className="mx-auto flex min-h-dvh max-w-4xl flex-col items-center justify-center p-3 py-6 sm:p-4 safe-area-padding">
         <AimWindow partyGoers={partyGoers} conversations={conversations} />
       </div>
     </div>
