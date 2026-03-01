@@ -34,8 +34,8 @@ export const conversations: Record<string, Message[]> = {
   ],
   "Colin": [
     { from: BIRTHDAY_GIRL_USERNAME, text: "omg i'm 30 😤" },
-    { from: "Colin", text: "Yo remember when you made me cry." },
-    { from: "Colin", text: "https://c.tenor.com/aD8IychBhXIAAAAd/tenor.gif" },
+    { from: "c0linIsAws0m", text: "Yo remember when you made me cry." },
+    { from: "c0linIsAws0m", text: "https://c.tenor.com/aD8IychBhXIAAAAd/tenor.gif" },
   ],
   "Joseph": [
     { from: BIRTHDAY_GIRL_USERNAME, text: "omg i'm 30 😤" },
@@ -45,6 +45,6 @@ export const conversations: Record<string, Message[]> = {
   ],
   "Chris": [
     { from: BIRTHDAY_GIRL_USERNAME, text: "Chris..... i'm 30 😤" },
-    { from: "Chris", text: "Yo you're like old now. remember when we got hammered in owen basement and you wouldn't walk? we had to push you in a desk chair thru the hallway, it looked so sus… you screaming “WHEEEEEEEE!!” While we pushed you had me crying 😂" },
+    { from: "krizda4", text: "Yo you're like old now. remember when we got hammered in owen basement and you wouldn't walk? we had to push you in a desk chair thru the hallway, it looked so sus… you screaming “WHEEEEEEEE!!” While we pushed you had me crying 😂" },
   ],
 };
