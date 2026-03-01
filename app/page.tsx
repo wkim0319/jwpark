@@ -9,7 +9,7 @@ export default function Home() {
       className="min-h-dvh bg-[#008080] bg-cover bg-center bg-no-repeat"
       style={{
         fontFamily: "Tahoma, Arial, sans-serif",
-        backgroundImage: "url(https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg)",
+        backgroundImage: "url(/desktop-bg.png)",
       }}
     >
       <div className="mx-auto flex min-h-dvh max-w-4xl flex-col items-center justify-center p-3 py-6 sm:p-4 safe-area-padding">
