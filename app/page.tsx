@@ -14,6 +14,7 @@ export default function Home() {
     >
       <div className="mx-auto flex min-h-dvh max-w-4xl flex-col items-center justify-center p-3 py-6 sm:p-4 safe-area-padding">
         <AimWindow partyGoers={partyGoers} conversations={conversations} />
+        <p className="mt-2 text-xs text-white/70">v1.1</p>
       </div>
     </div>
   );
